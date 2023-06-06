@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { Text, Box, Center, VStack, themeTools, useTheme, useColorMode, useColorModeValue } from "native-base"
+import { Text, Box, Center, VStack, useColorModeValue } from "native-base"
+import ThemeToggle from "../components/theme-toggle"
 
 export default function MainScreen () {
   return (
@@ -10,9 +11,10 @@ export default function MainScreen () {
       flex = {1}
     >
       <VStack space={5} alignItems="center">
-        <Box>
-          <Text>Hello</Text>
+        <Box p="10" bg={useColorModeValue('red.500', 'yellow.500')}>
+          <Text color={useColorModeValue('white', 'black')}>Hello</Text>
         </Box>
+        <ThemeToggle />
       </VStack>
     </Center>
   )
