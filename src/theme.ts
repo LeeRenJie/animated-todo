@@ -1,10 +1,12 @@
 import { extendTheme } from 'native-base'
 
+// Configuration options for the theme
 const config = {
-  useSystemColorMode: false,
-  initialColorMode: 'light'
+  useSystemColorMode: false, // Disables automatic color mode based on the system preference
+  initialColorMode: 'light' // Sets the initial color mode to 'light'
 }
 
+// Color palette for the theme
 const colors = {
   primary: {
     50: '#EEF2F6',
@@ -20,4 +22,5 @@ const colors = {
   }
 }
 
+// Create and export the extended theme using the configuration and colors
 export default extendTheme({ config, colors })
