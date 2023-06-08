@@ -27,7 +27,8 @@
     "react-native-web": "~0.18.10",
     "shortid": "^2.2.16",
     "styled-components": "^5.3.10",
-    "styled-system": "^5.1.5"
+    "styled-system": "^5.1.5",
+    "@expo/webpack-config": "^18.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
